@@ -1,0 +1,41 @@
+name: Samlingsärende 🗂️
+description: Samlingsärende för att organisera relaterade ärenden.
+title: "[Samlingsärende]: "
+labels:
+  - Samlingsärende
+body:
+  - type: textarea
+    id: intro
+    attributes:
+      label: Info
+      description: Förifylld text som beskriver detta ärende.
+      value: >
+        > Det här är ett samlingsärende.
+        > Ärendet uppdateras löpande.
+
+        _NOTE: Diskussioner om specifika ärenden görs i respektive ärende._
+  - type: textarea
+    id: todo
+    attributes:
+      label: Todo
+      description: Beskriv saker som behöver göras.
+  - type: textarea
+    id: draft_in_progress
+    attributes:
+      label: Draft / In progress
+      description: Saker som är påbörjade men ännu inte klara.
+  - type: textarea
+    id: pr
+    attributes:
+      label: PR
+      description: Relaterade Pull Requests.
+  - type: textarea
+    id: other
+    attributes:
+      label: Övrigt
+      description: Annan information som kan vara relevant.
+  - type: textarea
+    id: done
+    attributes:
+      label: Klart
+      description: Lista över saker som är klara.
