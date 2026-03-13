@@ -1,0 +1,30 @@
+name: Utredning 🔬
+description: Skapa ett utredningsärende.
+title: "[Utredning]: "
+labels:
+  - research
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: Beskrivning och alternativa lösningar
+      description: Beskriv vad som behöver utredas och eventuella alternativa lösningar på problemet eller funktionaliteten.
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Kriterier som måste uppfyllas för att uppgiften ska anses vara klar.
+      placeholder: |
+        - Frågeställningen är tydligt formulerad och avgränsad
+        - Relevanta källor och underlag är insamlade och dokumenterade
+        - Analysens slutsatser och rekommendationer är sammanfattade
+        - Nästa steg eller beslutspunkter är föreslagna
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Bilagor och länkar
+      description: Lägg till annan relevant information, skärmdumpar, designskisser och länkar till relaterade ärenden.
