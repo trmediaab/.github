@@ -1,0 +1,44 @@
+name: Ny funktionalitet 💡
+description: Specifiera ny funktionalitet för det här projektet.
+title: "[Nytt]: "
+labels:
+  - feature
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: Funktionaliteten
+      description: Beskriv funktionaliteten och hur lösningen ska fungera.
+      placeholder: |
+        Beskriv vad som behöver utvecklas och varför. Inkludera så mycket kontext som möjligt.
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Kriterier som måste uppfyllas för att uppgiften ska anses vara klar.
+      placeholder: |
+        - UX/design är genomgången och länkad (t.ex. Figma eller skärmdump)
+        - Eventuella API-/datamodelländringar är dokumenterade (OpenAPI/schema)
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: Övrig info (alternativ, kontext, skisser)
+      description: Samla alternativa lösningar, extra kontext, skärmdumpar eller länkar till design.
+      placeholder: |
+        Alternativa lösningar:
+        -
+        Annan information/kontext:
+        -
+        Skärmdumpar:
+        -
+        Designskisser:
+        -
+  - type: textarea
+    id: issuelinks
+    attributes:
+      label: Relaterade ärenden
+      description: Klistra in länkar till relaterade ärenden.

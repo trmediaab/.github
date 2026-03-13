@@ -2,7 +2,7 @@ name: Samlingsärende 🗂️
 description: Samlingsärende för att organisera relaterade ärenden.
 title: "[Samlingsärende]: "
 labels:
-  - Samlingsärende
+  - samlingsärende
 body:
   - type: textarea
     id: intro
@@ -13,29 +13,19 @@ body:
         > Det här är ett samlingsärende.
         > Ärendet uppdateras löpande.
 
+        > Deluppgifter ska skapas som GitHub sub-issues kopplade till detta ärende.
+
         _NOTE: Diskussioner om specifika ärenden görs i respektive ärende._
   - type: textarea
-    id: todo
+    id: dod
     attributes:
-      label: Todo
-      description: Beskriv saker som behöver göras.
-  - type: textarea
-    id: draft_in_progress
-    attributes:
-      label: Draft / In progress
-      description: Saker som är påbörjade men ännu inte klara.
-  - type: textarea
-    id: pr
-    attributes:
-      label: PR
-      description: Relaterade Pull Requests.
-  - type: textarea
-    id: other
-    attributes:
-      label: Övrigt
-      description: Annan information som kan vara relevant.
-  - type: textarea
-    id: done
-    attributes:
-      label: Klart
-      description: Lista över saker som är klara.
+      label: Definition of Done (DoD)
+      description: Kriterier som måste uppfyllas för att uppgiften ska anses vara klar.
+      placeholder: |
+        - Enhetstester är skrivna och godkända
+        - Kodgranskning är genomförd
+        - Dokumentation är uppdaterad
+      value: >
+        - När alla sub-issues är stängda
+    validations:
+      required: true

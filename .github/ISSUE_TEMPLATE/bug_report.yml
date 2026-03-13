@@ -1,0 +1,52 @@
+---
+name: Buggrapport 🐞
+description: Upptäckt ett fel? Skapa en buggrapport med så utförlig information du kan ge.
+title: "[BUG]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Innan du skickar:**
+        - Rensa cache och cookies i webbläsaren.
+        - Testa igen och notera om problemet kvarstår.
+        - Lägg till länken till sidan där felet uppstår (obligatoriskt) och bifoga relevanta resurser eller skärmdumpar vid behov.
+  - type: textarea
+    id: description
+    attributes:
+      label: Beskriv buggen
+      description: En tydlig och kortfattad beskrivning av felet.
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Kriterier som måste uppfyllas för att uppgiften ska anses vara klar.
+      placeholder: |
+        - Enhetstester är skrivna och godkända
+        - Kodgranskning är genomförd
+        - Dokumentation är uppdaterad
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Återskapa
+      description: >-
+        Beskriv hur felet kan återskapas och inkludera miljöinfo (operativsystem, webbläsare,
+        IP om möjligt),
+        samt skärmdumpar. Gör en steg-för-steg lista likt nedan.
+      placeholder: |
+        1. Gå till '...'
+        2. Klicka på '...'
+        3. Felmeddelande
+        Länk: https://trmedia.se
+        Skärmdump: lägg in bild eller länk här
+        Miljö:
+        - Operativsystem: macOS Ventura
+        - Webbläsare: Firefox 108.0.2
+        - IP-adress: 127.0.0.1
+    validations:
+      required: true

@@ -1,0 +1,96 @@
+name: Säkerhetsärende 🔐
+description: Rapportera en säkerhetsrisk, sårbarhet eller incident kopplad till projektet.
+title: "[Säkerhet]: "
+labels:
+  - security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Använd den här mallen för säkerhetsrelaterade ärenden.
+
+        Dela inte hemligheter, tokens, lösenord eller annan känslig information i klartext.
+  - type: checkboxes
+    id: safety_check
+    attributes:
+      label: Bekräftelse
+      options:
+        - label: Jag har inte inkluderat hemligheter, tokens, lösenord eller annan känslig information i klartext.
+          required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Allvarlighetsgrad
+      description: Välj uppskattad risknivå för problemet.
+      options:
+        - Kritisk
+        - Hög
+        - Medium
+        - Låg
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Sammanfattning
+      description: Beskriv problemet kortfattat.
+      placeholder: |
+        Exempel: Oautentiserad användare kan nå intern funktionalitet via ...
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: Påverkade delar
+      description: Lista berörda system, miljöer, URL:er, endpoints eller komponenter.
+      placeholder: |
+        - Tjänst/system:
+        - Miljö:
+        - URL/endpoint:
+        - Version/release:
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Risk och påverkan
+      description: Beskriv möjlig påverkan på data, behörigheter, drift eller användare.
+      placeholder: |
+        Exempel: Kan leda till obehörig åtkomst till kunddata eller påverkan på drift.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduktion eller observationer
+      description: Beskriv hur problemet observerades eller kan verifieras utan att dela känslig information.
+      placeholder: |
+        1. Gå till '...'
+        2. Utför '...'
+        3. Observera '...'
+
+        Loggar/skärmdumpar/länkar:
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Tillfällig mitigering
+      description: Beskriv eventuella tillfälliga åtgärder, workaround eller behov av omedelbar blockering.
+      placeholder: |
+        - Tillfällig åtgärd:
+        - Behöver access spärras:
+        - Behöver funktion stängas av:
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Kriterier som måste uppfyllas för att uppgiften ska anses vara klar.
+      placeholder: |
+        - Root cause är identifierad och åtgärdad
+        - Säkerhetsverifiering eller regressionstest är genomförd
+        - Eventuella loggar, larm eller monitorering är uppdaterade
+        - Berörda team eller intressenter är informerade
+    validations:
+      required: true
