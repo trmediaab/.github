@@ -80,7 +80,7 @@ body:
       description: Beskriv eventuella tillfälliga åtgärder, workaround eller behov av omedelbar blockering.
       placeholder: |
         - Tillfällig åtgärd:
-        - Behöver access spärras:
+        - Behöver åtkomst spärras:
         - Behöver funktion stängas av:
   - type: textarea
     id: dod
