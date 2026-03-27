@@ -1,0 +1,70 @@
+name: AI-ärende 🤖
+description: Mall för AI-relaterade uppgifter (prompter, modellbeteende, inferensflöden).
+title: "[AI]: "
+labels:
+  - AI
+  - ai-issue-review
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Syfte och problem
+      description: Beskriv vad vi vill uppnå och vilket nuvarande beteende som ska förändras.
+      placeholder: |
+        Syfte:
+        - Förbättra svarskvalitet på ...
+        - Ta fram ny funktionalitet för ...
+        Nuvarande beteende/önskat resultat:
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: Kriterier som måste uppfyllas för att ärendet ska anses klart.
+      placeholder: |
+        - Prompten är dokumenterad och versionerad
+        - Output matchar förväntat resultat för definierade testfall
+        - Eventuella kodändringar är testade och kodgranskade
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt att använda
+      description: Lägg in den exakta prompten som ska testas/köras (system- och user-delar).
+      placeholder: |
+        ### System-prompt
+        ```
+        ...
+        ```
+        ### User-prompt
+        ```
+        ...
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Testdata och kontext
+      description: Ange exempel på input, miljöparametrar och länkar som behövs för att köra prompten.
+      placeholder: |
+        - Modell/variant:
+        - Temperatur/top_p:
+        - Kontext/URL:
+        - Testinput:
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Relaterade ärenden och referenser
+      description: Länka till tidigare AI-ärenden, dataunderlag eller design som påverkar arbetet.
+      placeholder: |
+        - Ärende:
+        - Data/Notion/Figma:
+        - API/loggar:
