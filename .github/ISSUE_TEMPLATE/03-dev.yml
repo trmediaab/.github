@@ -14,7 +14,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Beskrivning av uppgiften/bug
+      label: Beskrivning av uppgiften/buggen
       description: En tydlig och utförlig beskrivning av utvecklingsuppgiften.
       placeholder: |
         Beskriv vad som behöver utvecklas och varför. Inkludera teknisk kontext som är relevant.
