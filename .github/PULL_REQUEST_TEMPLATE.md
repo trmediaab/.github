@@ -1,6 +1,6 @@
 # What I did / Why
 
-<!-- Briefly describe what your PR does, why it is needed, and reference any related issues (e.g. #1000, #1001). Prefix with 'Closes' if the PR will fix the issue(s). -->
+<!-- Briefly describe what your PR does and why it is needed -->
 
 ## Issue
 
