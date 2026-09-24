@@ -3,7 +3,7 @@ description: För interna utvecklingsuppgifter - Endast för utvecklare. Detta a
 title: "[INTERNAL]: "
 labels:
   - internal
-  - ai-issue-review
+  - bot:issue:review
 body:
   - type: markdown
     attributes:
