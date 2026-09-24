@@ -3,7 +3,7 @@ description: Mall för AI-relaterade uppgifter (prompter, modellbeteende, infere
 title: "[AI]: "
 labels:
   - AI
-  - "bot: issue_review-request"
+  - bot:issue:review
 body:
   - type: textarea
     id: goal
